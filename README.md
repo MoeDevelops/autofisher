@@ -18,10 +18,9 @@ The script captures screenshots of the Minecraft screen, monitoring for the appe
     ```bash
     pip install pyautogui pynput opencv-python
     ```
-4. Rename the bobber image<br>
-Look in the resources folder for the file with your GUI Scale.<br>
-Then rename it to Bobber.png<br>
-The default is a GUI Scale of 3x
+4. Configure GUI-Scale<br>
+Edit the value of gui_scale to your gui scale in Minecraft<br>
+Right now the values 1-3 are supported
 5. Start the script
     ``` bash
     python3 autofisher.py
@@ -40,10 +39,9 @@ The default is a GUI Scale of 3x
     ```bash
     pip install pyautogui pynput opencv-python
     ```
-4. Rename the bobber image<br>
-Look in the resources folder for the file with your GUI Scale.<br>
-Then rename it to Bobber.png<br>
-The default is a GUI Scale of 3x
+4. Configure GUI-Scale<br>
+Edit the value of gui_scale to your gui scale in Minecraft<br>
+Right now the values 1-3 are supported
 5. Start the script
     ``` bash
     python autofisher.py
