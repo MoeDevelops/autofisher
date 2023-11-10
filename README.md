@@ -9,15 +9,44 @@ The script captures screenshots of the Minecraft screen, monitoring for the appe
 1. Set up a virtual environment (optional but recommend)
     ```bash
     python3 -m venv venv
+    ```
+2. Activate the virtual environment
+    ```bash
     source venv/bin/activate
     ```
-2. Install dependencies
+3. Install dependencies
     ```bash
     pip install pyautogui pynput opencv-python
     ```
-4. Start the script
+4. Rename the bobber image<br>
+Look in the resources folder for the file with your GUI Scale.<br>
+Then rename it to Bobber.png<br>
+The default is a GUI Scale of 3x
+5. Start the script
     ``` bash
     python3 autofisher.py
+    ```
+
+### Windows
+1. Set up a virtual environment (optional but recommend)
+    ```bash
+    python3 -m venv venv
+    ```
+2. Activate the virtual environment
+    ```bash
+    venv\Scripts\activate
+    ```
+3. Install dependencies
+    ```bash
+    pip install pyautogui pynput opencv-python
+    ```
+4. Rename the bobber image<br>
+Look in the resources folder for the file with your GUI Scale.<br>
+Then rename it to Bobber.png<br>
+The default is a GUI Scale of 3x
+5. Start the script
+    ``` bash
+    python autofisher.py
     ```
 
 ## Notes
