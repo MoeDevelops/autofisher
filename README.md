@@ -29,7 +29,7 @@ Right now the values 1-3 are supported
 ### Windows
 1. Set up a virtual environment (optional but recommend)
     ```bash
-    python3 -m venv venv
+    python -m venv venv
     ```
 2. Activate the virtual environment
     ```bash
