@@ -10,9 +10,9 @@ if __name__ == "__main__":
     while True:
         time.sleep(0.2)
         
-        if result := imageIsOnScreen(guiScale) is bool and result == True:
+        if result := imageIsOnScreen(guiScale) == True:
             counter += 1
-            log("Bobber went down. Counter:", counter)
+            log(f"Bobber went down. Counter: {counter}")
             click()
             time.sleep(2)
             click()
@@ -21,4 +21,4 @@ if __name__ == "__main__":
             log(f"Searching screen...")
 
             if result is Exception:
-                log(str(result))
+                log(f"ERROR: {result}")
