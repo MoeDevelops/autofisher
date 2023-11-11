@@ -1,8 +1,10 @@
-venv\Scripts\activate
+call venv\Scripts\activate
 
 pip install pyinstaller
 
-xcopy resources\ dist\resources
+pyinstaller --onefile main.py
+
+xcopy resources\ dist\resources\
 copy config.txt dist
 
 move dist\main.exe dist\autofisher.exe
