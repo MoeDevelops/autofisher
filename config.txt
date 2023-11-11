@@ -1,1 +1,2 @@
 gui_scale=3
+sleep_between_reads=0.2

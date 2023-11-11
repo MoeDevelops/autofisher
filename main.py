@@ -1,21 +1,23 @@
 from modules.logger import log
-from modules.configreader import getGuiScale
-from modules.io_controller import click, imageIsOnScreen
+import modules.config_reader as config
+import modules.io_controller as io
 import time
+
 
 if __name__ == "__main__":
     counter = 0
-    guiScale = getGuiScale()
+    guiScale = config.get_gui_scale()
+    sleep_time = config.get_sleep_between_reads()
 
     while True:
-        time.sleep(0.2)
-        
-        if result := imageIsOnScreen(guiScale) == True:
+        time.sleep(sleep_time)
+
+        if result := io.image_is_on_screen(guiScale) == True:
             counter += 1
             log(f"Bobber went down. Counter: {counter}")
-            click()
+            io.click()
             time.sleep(2)
-            click()
+            io.click()
             time.sleep(3)
         else:
             log(f"Searching screen...")

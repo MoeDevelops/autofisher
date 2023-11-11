@@ -3,11 +3,13 @@ import pyautogui
 
 mouse = Controller()
 
+
 def click():
     mouse.press(Button.right)
     mouse.release(Button.right)
 
-def imageIsOnScreen(guiScale):
+
+def image_is_on_screen(guiScale):
     try:
         return pyautogui.locateOnScreen(image=f"resources/Bobber{guiScale}.png", grayscale=True, confidence=0.8) is not None
     except Exception as e:
