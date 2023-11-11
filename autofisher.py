@@ -4,6 +4,10 @@ import time
 
 mouse = Controller()
 
+def log(message: str):
+    timestamp = time.strftime("%H:%M:%S", time.localtime())
+    print(f"[{timestamp}] {message}")
+
 def click():
     mouse.press(Button.right)
     mouse.release(Button.right)
@@ -23,14 +27,14 @@ counter = 0
 guiScale = getGuiScale()
 
 while True:
-    time.sleep(0.25)
+    time.sleep(0.2)
     try:
         if pyautogui.locateOnScreen(image=f"resources/Bobber{guiScale}.png", grayscale=True, confidence=0.8) is not None:
             counter += 1
-            print("Bobber went down. Counter:", counter)
+            log("Bobber went down. Counter:", counter)
             click()
             time.sleep(2)
             click()
-            time.sleep(5)
+            time.sleep(3)
     except Exception as e:
-        print(f"Couldn't find image {e}")
+        log(f"Bobber isn't down {e}")
