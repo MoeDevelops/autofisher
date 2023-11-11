@@ -1,1 +1,1 @@
-gui_scale=2
+gui_scale=3
