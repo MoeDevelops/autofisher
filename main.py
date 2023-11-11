@@ -12,7 +12,9 @@ if __name__ == "__main__":
     while True:
         time.sleep(sleep_time)
 
-        if result := io.image_is_on_screen(guiScale) == True:
+        result = io.image_is_on_screen(guiScale)
+        
+        if result == True:
             counter += 1
             log(f"Bobber went down. Counter: {counter}")
             io.click()
