@@ -54,7 +54,7 @@ If you are on windows check the box `Add python.exe to PATH`
     ```
 4. Start the script
     ``` bash
-    python3 autofisher.py
+    python3 main.py
     ```
 
 ### Windows
@@ -72,7 +72,7 @@ If you are on windows check the box `Add python.exe to PATH`
     ```
 4. Start the script
     ``` bash
-    python autofisher.py
+    python main.py
     ```
 
 ## Notes
