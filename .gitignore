@@ -1,3 +1,8 @@
+# Custom
+autofisher/
+autofisher.tar.gz
+autofisher.zip
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
