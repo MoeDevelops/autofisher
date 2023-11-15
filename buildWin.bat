@@ -6,6 +6,7 @@ pyinstaller --onefile main.py
 
 xcopy resources\ dist\resources\
 copy config.txt dist
+copy README.md dist
 
 move dist\main.exe dist\autofisher.exe
 rename dist autofisher

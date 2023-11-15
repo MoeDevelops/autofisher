@@ -8,6 +8,7 @@ pyinstaller --onefile main.py
 
 cp -r resources dist
 cp config.txt dist
+cp README.md dist
 
 mv dist/main dist/autofisher
 mv dist autofisher
