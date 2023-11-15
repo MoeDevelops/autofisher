@@ -38,7 +38,8 @@ The script captures screenshots of the Minecraft screen, monitoring for the appe
 ## Use source code
 ### Install Python
 Install python 11.6, if not already installed.<br>
-If you are on windows check the box `Add python.exe to PATH`
+If you are on windows check the box `Add python.exe to PATH` in the installer
+If you are on Linux make sure to isntall python3-dev
 ### Linux
 1. Set up a virtual environment (optional but recommend)
     ```bash
