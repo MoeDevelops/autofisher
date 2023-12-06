@@ -27,6 +27,12 @@ The script captures screenshots of the Minecraft screen, monitoring for the appe
     ./autofisher
     ```
 
+### Is it running?
+The program is running if the console prints out
+```py
+Searching screen...
+```
+
 ### Windows
 1. Unzip<br>
     Unzip the `autofisher_win_x64.zip` file
