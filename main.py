@@ -1,3 +1,4 @@
+from pyautogui import PyAutoGUIException
 from modules.logger import log
 import modules.config_reader as config
 import modules.io_controller as io
@@ -13,7 +14,7 @@ if __name__ == "__main__":
         time.sleep(sleep_time)
 
         result = io.image_is_on_screen(guiScale)
-        
+
         if result == True:
             counter += 1
             log(f"Bobber went down. Counter: {counter}")
@@ -24,5 +25,5 @@ if __name__ == "__main__":
         else:
             log(f"Searching screen...")
 
-            if result is Exception:
+            if isinstance(result, Exception):
                 log(f"ERROR: {result}")
